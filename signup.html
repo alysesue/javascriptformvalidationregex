@@ -1,0 +1,142 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>DataX - Signup</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+	<link rel="stylesheet" href="assets/stylesheets/main_css.css">
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="assets/javascript/main_js.js"></script>
+	
+	
+	
+</head>
+
+<body onload="document.registration.username.focus();">
+
+<!--header-->
+
+	<header class="header-container">
+	
+		<div class="logo">
+			<a href=""><img src="" alt="" id="logo">Logo Here</a>
+		</div>
+		
+		<nav class="header-nav">
+			<ul>
+				<li><a href="">Signup</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+	
+	<div class="title">
+		<div class="grid">
+			<h1>Signup</h1>
+		</div>
+	</div>
+	
+<!--main section-->
+	
+	<form name="registration" id="registration" method="post" onSubmit="return formValidation();">  
+		
+		<h1>Hello!</h1>
+		<p>Please take a minute to provide your details. One of our customer officers will contact you within 48 hours of submitting this form.</p>
+		
+		<fieldset class="form-input-details"> 
+		
+				<label for="userid">Choose user id</label>
+				<span>(between 5 and 12 characters)</span>
+				<input type="text" name="userid" id="userid">
+				
+				<label for="passid">Choose password</label>
+				<span>(between 7 and 12 characters)</span>
+				<input type="password" name="passid" id="passid">
+				
+				<label for="username">Your full name</label>
+				<span>(alphabet only)</span>
+				<input type="text" name="username" id="username">
+				
+				<label for="address">Address</label>
+				<span>(alphanumeric only)</span>
+				<input type="text" name="address" id="address">
+				
+				<label for="country">Country:</label>
+				
+				<select name="country" id="country">
+					<option selected="" value="Default">(Please select a country)</option>  
+					<option value="Australia">Australia</option> 
+					<option value="USA">USA</option> 					
+					<option value="UK">UK</option>
+					<option value="France">France</option>  
+					<option value="Canada">Canada</option>
+				</select>
+				
+				<br>
+				<br>
+				
+				<label for="zip">Post Code/Zip Code</label>
+				<span>(numeric only)</span>
+				<input type="text" name="zip" id="zip">
+				
+				<label for="email">Email</label>
+				<span>(using format youremail@email.com)</span>
+				<input type="text" name="email" id="email"> 
+				
+			</fieldset>
+				
+			<fieldset class="form-radio-checkbox-dropdown">	
+			
+				<label id="usecase">Main purpose you will be using product for</label><br>
+					<input type="radio" name="usebusiness" value="Business" id="usebusiness"><span>Business</span>
+					<input type="radio" name="useeducation" value="Study" id="usestudy"><span>Education</span>
+					<input type="radio" name="usehobby" value="Hobby" id="usehobby"><span>Hobby</span>
+
+				<br><br>
+				
+				<label id="newsletter">Sign me up for the newsletter</label><br>
+					<input type="checkbox" name="newsletteryes" value="Yes"><span>Yes</span>
+					<input type="checkbox" name="newsletterno" value="No"><span>No</span>
+				
+				<br>
+				
+				<label>Best day to contact you</label>
+				<input type="text" id="datepicker">
+				
+				<br>
+				
+				<input class="btn-default" id="submit" name="submit" type="submit" value="Submit">
+				<input class="btn-default" id="reset" name="reset" type="reset" value="Reset">
+
+			</fieldset>
+	</form>  
+	
+	<div class="bottom-near-footer">
+		<div id="display-form-info"></div>
+	</div>
+	
+<!--footer-->	
+	
+	<footer class="footer-container">
+		<nav class="footer-nav">
+			<ul>
+				<li><a href="">About</a></li> 
+				<li><a href="">Product</a></li>
+				<li><a href="">Pricing</a></li>
+			</ul>
+		</nav>
+		
+		<div class="footer-social-media">
+			<a href="https://www.facebook.com/FacebookAU/"><img src="assets/contact/facebook.png" alt="facebook" class="social-buttons"></a>
+			<a href="https://twitter.com/twitter"><img src="assets/contact/twitter.png" alt="twitter" class="social-buttons"></a>
+			<a href="https://www.google.com/gmail/"><img src="assets/contact/email.png" alt="email" class="social-buttons"></a>
+		</div>
+	</footer>
+	
+</body>
+</html>

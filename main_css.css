@@ -1,0 +1,356 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Overall
+  ========================================
+*/
+
+body {
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;  
+  font-family: Lato, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+.wrapper {
+	float:left;
+	width: 100%;
+	overflow:hidden;
+}
+.grid {
+	margin: 0 auto;
+	width: 1250px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h2, h3, h4 {
+  color: #648880;
+}
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #648880;
+  text-decoration: none;
+}
+a:hover {
+  color: #a9b2b9;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn-default {
+  border: 0;
+  background: #ffcc00;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #cca300;
+}
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+.header-container {
+	padding-bottom: 5%;
+	margin-top: 0;
+	margin-bottom: 1%;
+	background-color: #ffffff;
+}
+.logo {
+	float: left;
+	padding: 10px 0 10px 20px;
+}
+#logo {
+	height: 50px;
+}
+.header-nav {
+	float: right;
+	padding: 22px 20px 22px 0;
+	text-align: right;
+	vertical-align: right;
+}
+.title {
+	float: left;
+	width: 100%;
+	height: 60px;
+	background-color: #3D3C3C;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+.footer-container {
+	float: left;
+	width: 100%;
+	height: 200px;
+	background-color: #3D3C3C;
+}
+.footer-nav {
+	float: left;
+	padding: 90px 0;
+}
+.footer-social-media {
+	float: right;
+	padding: 80px 0;
+}
+.bottom-near-footer {
+    float: left;
+    width: 100%;
+    height: 300px;
+    background-color: #99ddff;
+}
+.social-buttons {
+    height: 60px;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+nav li:last-child {
+	margin-right: 0;
+}
+
+/*
+  ========================================
+  Signup
+  ========================================
+*/
+form {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 50%;
+	padding: 2em;
+	border: 1px solid #CCC;
+	background-color: #809fff;
+}
+input,
+select,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+input:focus {
+    border-color: #000;
+}
+#display-form-info {
+	text-align: center;
+	padding: 70px 0;
+}	
+.form-input-details label,
+.form-radio-checkbox-dropdown label {
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 400;
+}
+.form-input-details input {
+	border: 1px solid #c6c9cc;
+	border-radius: 5px;
+	color: #888;
+	display: block;
+	margin: 5px 0 27px 0;
+	padding: 5px 8px;
+	width: 100%;
+}
+.form-radio-checkbox-dropdown input {
+	color: #888;
+	margin: 25px 10px 0 0;
+	padding: 5px 8px;
+}
+.ui-datepicker {
+    width: 300px;
+    height: 300px;
+    margin: 5px auto 0;
+}
+.ui-datepicker table {
+	width: 100%;
+}
+.ui-datepicker-header {
+    background: #000000;
+    color: #ffffff;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #ffffff;
+}
+.ui-datepicker-title {
+    text-align: center;
+    font-size: 15px;
+}
+.ui-datepicker-prev {
+    float: left;
+    cursor: pointer;
+    background-position: center -30px;
+}
+.ui-datepicker-next {
+    float: right;
+    cursor: pointer;
+    background-position: center 0px;
+}
+.ui-datepicker thead {
+    background-color: #000000;
+}
+.ui-datepicker th {
+    background-color:#000000;
+    text-transform: uppercase;
+    font-size: 8pt;
+    color: #ffffff;
+}
+.ui-datepicker tbody td {
+    padding: 0;
+}
+.ui-datepicker tbody td:last-child {
+	border-right: 0px;
+}
+.ui-datepicker tbody tr {
+    border-bottom: 1px solid #bbb;
+}
+.ui-datepicker tbody tr:last-child {
+	border-bottom: 0px;
+}
+.ui-datepicker a {
+    text-decoration: none;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+}
+.ui-datepicker-calendar .ui-state-default {
+      background: linear-gradient(#999999, #737373);
+      color:#ffffff;
+      height:40px;
+      width:40px;
+}
+.ui-datepicker-calendar .ui-state-hover {
+    background: #33adff;
+    color: #FFFFFF;
+}
+.ui-datepicker-calendar .ui-state-active {
+    background: #33adff;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    color: #e0e0e0;
+    text-shadow: 0px 1px 0px #4d7a85;
+    border: 1px solid #55838f;
+    position: relative;
+    margin: -1px;
+}
+.ui-datepicker-unselectable .ui-state-default {
+    background: #D6E4BE;
+    color: #000;
+}
